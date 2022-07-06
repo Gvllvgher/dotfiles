@@ -10,6 +10,9 @@ ln -sf $SCRIPT_DIR/.zshrc ~/.zshrc
 
 ln -sf $SCRIPT_DIR/.gtkrc-2.0 ~/.gtkrc-2.0
 
+mkdir -p ~/.config/gtk-3.0
+ln -sf $SCRIPT_DIR/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
+
 rm -rf ~/.config/qtile
 ln -sfT $SCRIPT_DIR/.config/qtile ~/.config/qtile
 

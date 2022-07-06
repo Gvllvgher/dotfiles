@@ -8,6 +8,10 @@ picom & disown # --experimental-backends --vsync should prevent screen tearing o
 xfce4-power-manager & disown
 #exec --no-startup-id sleep 3 && xfce4-power-manager
 
+# Themes
+xfconf-query -c xsettings -p /Net/IconThemeName -s 'Papirus-Dark'
+xfconf-query -c xsettings -p /Net/ThemeName -s 'Arc-Dark'
+
 # Low battery notifier
 ~/.config/qtile/scripts/check_battery.sh & disown
 

@@ -1,5 +1,6 @@
 #!/bin/sh
-feh --bg-scale /usr/share/backgrounds/Community-Wallpapers/eos_wallpapers_community/Endy_vector_satelliet.png
+#feh --bg-scale /usr/share/backgrounds/Community-Wallpapers/eos_wallpapers_community/Endy_vector_satelliet.png
+feh --bg-scale ~/.config/qtile/nordic.jpg
 picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
 
 # Power Manager

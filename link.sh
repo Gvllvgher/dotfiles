@@ -8,6 +8,8 @@ ln -sf $SCRIPT_DIR/.vimrc ~/.vimrc
 
 ln -sf $SCRIPT_DIR/.zshrc ~/.zshrc
 
+ln -sf $SCRIPT_DIR/.gtkrc-2.0 ~/.gtkrc-2.0
+
 rm -rf ~/.config/qtile
 ln -sfT $SCRIPT_DIR/.config/qtile ~/.config/qtile
 

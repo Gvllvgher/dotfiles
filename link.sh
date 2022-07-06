@@ -10,3 +10,8 @@ ln -sf $SCRIPT_DIR/.zshrc ~/.zshrc
 
 rm -rf ~/.config/qtile
 ln -sfT $SCRIPT_DIR/qtile ~/.config/qtile
+
+mkdir -p ~/.config/xfce4/terminal
+ln -sf $SCRIPT_DIR/.config/xfce4/terminal/terminalrc ~/.config/xfce4/terminal/terminalrc
+
+ln -sf $SCRIPT_DIR/.config/picom.conf ~/.config/picom.conf

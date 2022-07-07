@@ -17,6 +17,9 @@ linkDirs=( \
     ".config/qtile" \
 )
 
+# Defines the current script directory
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]:-$0}";     )" &> /dev/null && pwd 2> /dev/null;     )";
+
 # Loop through the linkFiles list
 for file in ${linkFiles[@]}; do
     # Delete the file if it exists

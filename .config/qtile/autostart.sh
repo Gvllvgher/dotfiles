@@ -1,6 +1,9 @@
 #!/bin/sh
-#feh --bg-scale ~/.config/qtile/nordic.jpg
-feh --bg-scale ~/.config/qtile/arch-black-4k.png
+
+WALL=~/.config/qtile/arch-black-4k.png
+
+feh --bg-scale $WALL & disown
+betterlockscreen -u $WALL & disown
 picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
 
 # Power Manager

@@ -4,7 +4,7 @@
  *******************************************************/
 
 configuration {
-    font:				"Cascadia Code 12";
+    font:				"JetBrains Mono 13";
     show-icons:				true;
     icon-theme:				"Arc-X-D";
     display-drun:			"Apps";

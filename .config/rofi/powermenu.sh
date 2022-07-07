@@ -15,8 +15,8 @@ $reboot
 $shutdown" | rofi -dmenu\
                   -i\
                   -p "Power"\
-                  -config "~/.config/rofi/powermenu.rasi"\
-                  -font "JetBrains Mono 13"\
+                  -config "~/.config/rofi/config.rasi"\
+                  -font "JetBrains Mono 14"\
                   -width "15"\
                   -lines 5\
                   -line-margin 3\

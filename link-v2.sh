@@ -15,6 +15,7 @@ linkFiles=( \
 # Define any directories that need to be linked
 linkDirs=( \
     ".config/qtile" \
+    ".config/rofi" \
 )
 
 # Defines the current script directory

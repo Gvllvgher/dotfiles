@@ -17,6 +17,7 @@ configuration{
 }
 
 @import "~/.config/rofi/catppuccin.rasi"
+@theme "catppuccin"
 
 element-text, element-icon , mode-switcher {
     background-color: inherit;

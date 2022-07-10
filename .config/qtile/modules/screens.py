@@ -65,8 +65,8 @@ screens = [
                        foreground='#2f343f'
                        ),    
                 widget.Clock(format=' %Y-%m-%d %a %H:%M:%S',
-                             background="#2f343f",
-                             foreground='#9bd689'),
+                             background=palette[6],
+                             foreground=palette[1]),
                                                 widget.TextBox(                                                
                                                 
                        text = '',

@@ -2,6 +2,7 @@ from libqtile import bar
 from .widgets import *
 from libqtile.config import Screen
 from modules.keys import terminal
+from modules.colors import palette
 import os
 
 screens = [
@@ -84,6 +85,6 @@ screens = [
                 
             ],
             30,  # height in px
-            background="#404552"  # background color
+            background=palette[1]  # background color
         ), ),
 ]

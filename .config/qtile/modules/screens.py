@@ -45,6 +45,7 @@ screens = [
                     foreground='#99c0de'
                     ),
                 widget.CPU(
+                    format='{freq_current}GHz {load_percent}%',
                     foreground='#99c0de'
                     ),
                 widget.TextBox(
@@ -52,6 +53,13 @@ screens = [
                     foreground='#99c0de'
                     ),
                 widget.Memory(
+                    foreground='#99c0de'
+                    ),
+                widget.TextBox(
+                    text='|',
+                    foreground='#99c0de'
+                    ),
+                widget.Net(
                     foreground='#99c0de'
                     ),
                 widget.TextBox(

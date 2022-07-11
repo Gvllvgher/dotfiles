@@ -50,7 +50,8 @@ screens = [
                         lambda: qtile.cmd_spawn(os.path.expanduser('~/.config/rofi/powermenu.sh'))
                     },
                     foreground='#e39378'
-                )
+                ),
+                widget.Sep(padding=5, linewidth=0)
                 
             ],
             30,  # height in px

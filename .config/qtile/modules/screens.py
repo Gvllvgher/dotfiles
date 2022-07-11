@@ -19,6 +19,10 @@ screens = [
                 widget.Prompt(),
                 widget.Spacer(length=5),
                 widget.WindowName(foreground='#99c0de',fmt='{}'),
+                widget.Spacer(),
+                widget.Clock(format='%H:%M:%S - %m/%d/%y',
+                    foreground='#99c0de'),
+                widget.Spacer(),
                 widget.Chord(
                     chords_colors={
                         'launch': ("#ff0000", "#ffffff"),
@@ -67,11 +71,6 @@ screens = [
                     foreground='#99c0de'
                     ),
                 widget.Battery (
-                    foreground='#99c0de'),
-                widget.TextBox(
-                    text='|',
-                    foreground='#99c0de'),
-                widget.Clock(format='%m-%d-%Y %H:%M:%S',
                     foreground='#99c0de'),
                 widget.Sep(padding=5, linewidth=0),
                 widget.TextBox(

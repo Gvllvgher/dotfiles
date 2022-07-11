@@ -63,7 +63,7 @@ screens = [
                 widget.TextBox(
                     text='|',
                     foreground='#99c0de'),
-                widget.Clock(format=' %Y-%m-%d %a %H:%M:%S',
+                widget.Clock(format='%m-%d-%Y %H:%M:%S',
                     foreground='#99c0de'),
                 widget.Sep(padding=5, linewidth=0),
                 widget.TextBox(

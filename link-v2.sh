@@ -43,7 +43,7 @@ for dir in ${linkDirs[@]}; do
     rm -rf ~/$dir & > /dev/null
     
     # Create the parent directory(ies) if it/they don't exist
-    mkdir -p ~/${dir%/*}
+    # mkdir -p ~/${dir%/*}
 
     # Link the directory
     ln -sfT $SCRIPT_DIR/$dir ~/$dir

@@ -16,7 +16,7 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s 'Papirus-Dark'
 xfconf-query -c xsettings -p /Net/ThemeName -s 'Arc-Dark'
 
 # Low battery notifier
-~/.config/qtile/scripts/check_battery.sh & disown
+#~/.config/qtile/scripts/check_battery.sh & disown
 
 # Start welcome
 #eos-welcome & disown

@@ -40,6 +40,29 @@ screens = [
                 widget.Sep(padding=4, linewidth=0),
                 volume, 
                 widget.Sep(padding=4, linewidth=0),
+                widget.TextBox(
+                    text='|',
+                    foreground='#99c0de'
+                    ),
+                widget.CPU(
+                    foreground='#99c0de'
+                    ),
+                widget.TextBox(
+                    text='|',
+                    foreground='#99c0de'
+                    ),
+                widget.Memory(
+                    foreground='#99c0de'
+                    ),
+                widget.TextBox(
+                    text='|',
+                    foreground='#99c0de'
+                    ),
+                widget.Battery (
+                    foreground='#99c0de'),
+                widget.TextBox(
+                    text='|',
+                    foreground='#99c0de'),
                 widget.Clock(format=' %Y-%m-%d %a %H:%M:%S',
                     foreground='#99c0de'),
                 widget.Sep(padding=5, linewidth=0),

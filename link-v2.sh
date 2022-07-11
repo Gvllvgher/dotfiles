@@ -10,6 +10,7 @@ linkFiles=( \
     ".config/neofetch/config.conf" \
     ".config/xfce4/terminal/terminalrc" \
     ".config/picom.conf" \
+    ".config/dunst/dunstrc"
 )
 
 # Define any directories that need to be linked

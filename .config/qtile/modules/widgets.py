@@ -14,7 +14,7 @@ colors = [
 
 
 widget_defaults = dict(
-    font='JetBrains Mono',
+    font='JetBrainsMono Nerd Font Regular',
     fontsize=13,
     padding=3,
 )
@@ -50,7 +50,7 @@ class MyVolume(widget.Volume):
 
 volume = MyVolume(
     fontsize=18,
-    font='JetBrains Mono',
+    font='JetBrainsMono Nerd Font Regular',
     foreground=colors[4],
     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("pavucontrol")}
 )

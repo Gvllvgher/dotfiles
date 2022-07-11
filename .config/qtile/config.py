@@ -14,7 +14,7 @@ auto_fullscreen = True
 focus_on_window_activation = "smart"
 wmname = "Qtile"
 widget_defaults = dict(
-        font='JetBrains Mono',
+        font='JetBrainsMono Nerd Font Regular',
         fontsize=12,
         padding=3
 )

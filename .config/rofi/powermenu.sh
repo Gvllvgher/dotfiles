@@ -16,7 +16,7 @@ $shutdown" | rofi -dmenu\
                   -i\
                   -p "Power"\
                   -config "~/.config/rofi/config.rasi"\
-                  -font "JetBrains Mono 13"\
+                  -font "JetBrainsMono Nerd Font Regular 13"\
                   -width "15"\
                   -lines 5\
                   -line-margin 3\

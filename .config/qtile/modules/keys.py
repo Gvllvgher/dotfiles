@@ -16,7 +16,7 @@ keys = [
         desc="Move window focus to other window"),
 
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="spawn rofi"),
-    Key([mod], "l", lazy.spawn("betterlockscreen -l"), desc="lock screen"),
+    Key([mod], "b", lazy.spawn("betterlockscreen -l"), desc="lock screen"),
     Key([mod], "x", lazy.spawn("sh -c ~/.config/rofi/powermenu.sh"), desc="power menu"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.

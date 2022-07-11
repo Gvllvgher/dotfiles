@@ -8,7 +8,13 @@ layouts = [
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
+    layout.Bsp(
+        border_focus = '#5294e2',
+        border_normal = '#2c5380',
+        grow_amount = 5,
+        border_on_single = False,
+        margin = 8
+    )
     # layout.Matrix(),
     # layout.MonadTall(),
     # layout.MonadWide(),

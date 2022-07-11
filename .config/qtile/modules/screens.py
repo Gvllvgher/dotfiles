@@ -9,20 +9,19 @@ screens = [
     Screen(
         top=bar.Bar(
             [   widget.Sep(padding=3, linewidth=0, background="#2f343f"),
-                widget.Image(filename='~/.config/qtile/arch-logo.png', margin=3, background="#2f343f", mouse_callbacks={'Button1': lambda: qtile.cmd_spawn("rofi -show combi")}),
-                widget.Sep(padding=4, linewidth=0, background="#2f343f"), 
+                widget.Image(filename='~/.config/qtile/arch-logo.png', margin=3, mouse_callbacks={'Button1': lambda: qtile.cmd_spawn("rofi -show combi")}),
+                widget.Sep(padding=4, linewidth=0), 
                 widget.GroupBox(
                                 highlight_method='line',
                                 this_screen_border="#5294e2",
                                 this_current_screen_border="#5294e2",
                                 active="#ffffff",
-                                inactive="#848e96",
-                                background="#2f343f"),
+                                inactive="#848e96"),
                 widget.TextBox(
                        text = '',
                        padding = 0,
                        fontsize = 28,
-                       foreground='#2f343f'
+                       foreground=palette[1]
                        ),    
                 widget.Prompt(),
                 widget.Spacer(length=5),

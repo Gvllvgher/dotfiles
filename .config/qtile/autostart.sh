@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WALL=~/.config/qtile/arch-black-4k.png
+WALL=~/.config/qtile/blue_firewatch.png
 
 feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown

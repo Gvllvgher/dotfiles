@@ -9,8 +9,6 @@ screens = [
     Screen(
         top=bar.Bar(
             [   widget.Sep(padding=3, linewidth=0),
-                widget.Image(filename='~/.config/qtile/arch-logo.png', margin=3, mouse_callbacks={'Button1': lambda: qtile.cmd_spawn("rofi -show combi")}),
-                widget.Sep(padding=5, linewidth=0), 
                 widget.GroupBox(
                                 highlight_method='line',
                                 this_screen_border="#5294e2",

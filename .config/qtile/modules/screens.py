@@ -43,7 +43,7 @@ screens = [
                 volume, 
                 widget.Sep(padding=4, linewidth=0),
                 widget.Clock(format=' %Y-%m-%d %a %H:%M:%S',
-                             foreground='#99c0de'),
+                    foreground='#99c0de'),
                 widget.Sep(padding=5, linewidth=0),
                 widget.TextBox(
                     text='',
@@ -56,6 +56,13 @@ screens = [
                 
             ],
             30,  # height in px
-            background=palette[1]  # background color
+            background=palette[1],  # background color
+            opacity=0.9,
+            margin=[
+                10,
+                10,
+                2,
+                10
+            ]
         ), ),
 ]

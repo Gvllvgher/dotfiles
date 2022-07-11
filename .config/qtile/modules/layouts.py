@@ -5,7 +5,7 @@ layouts = [
     layout.Bsp(
         border_focus = '#5294e2',
         border_normal = '#2c5380',
-        grow_amount = 5,
+        grow_amount = 2,
         border_on_single = False,
         margin = 8
     ),

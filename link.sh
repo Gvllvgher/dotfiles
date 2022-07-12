@@ -11,6 +11,7 @@ linkFiles=( \
     ".config/xfce4/terminal/terminalrc" \
     ".config/picom.conf" \
     ".config/dunst/dunstrci" \
+    ".config/starship.toml" \
     ".config/flameshot/flameshot.ini" \
 )
 

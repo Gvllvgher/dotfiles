@@ -22,3 +22,5 @@ PROMPT='%n@%m %1~%(!.#.$) '
 alias ls="ls --color"
 alias la="ls -a"
 alias ll="ls -al"
+
+eval "$(starship init zsh)"

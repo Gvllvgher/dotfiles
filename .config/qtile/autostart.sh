@@ -6,6 +6,9 @@ feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
 
+# Display Settings
+xrandr --auto & disown
+
 # Power Manager
 #xfce4-power-manager --no-daemon
 xfce4-power-manager & disown

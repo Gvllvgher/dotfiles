@@ -50,28 +50,45 @@ screens = [
                     ),
                 widget.CPU(
                     format='{freq_current}GHz {load_percent}%',
-                    foreground='#99c0de'
+                    foreground='#99c0de',
+                    mouse_callbacks = {
+                        'Button1':
+                        lambda: qtile.cmd_spawn(terminal + ' -e "htop -s PERCENT_CPU"')
+                        }
                     ),
                 widget.TextBox(
                     text='|',
                     foreground='#99c0de'
                     ),
                 widget.Memory(
-                    foreground='#99c0de'
+                    foreground='#99c0de',
+                    mouse_callbacks = {
+                        'Button1':
+                        lambda: qtile.cmd_spawn(terminal + ' -e "htop -s PERCENT_MEM"')
+                        }
                     ),
                 widget.TextBox(
                     text='|',
                     foreground='#99c0de'
                     ),
                 widget.Net(
-                    foreground='#99c0de'
+                    foreground='#99c0de',
+                    mouse_callbacks= {
+                        'Button1':
+                        lambda: qtile.cmd_spawn(terminal + ' -e nmtui')
+                        }
                     ),
                 widget.TextBox(
                     text='|',
                     foreground='#99c0de'
                     ),
                 widget.Battery (
-                    foreground='#99c0de'),
+                    foreground='#99c0de',
+                    mouse_callbacks= {
+                        'Button1':
+                        lambda: qtile.cmd_spawn("xfce4-power-manager-settings")
+                        }
+                    ),
                 widget.Sep(padding=5, linewidth=0),
                 widget.TextBox(
                     text='',

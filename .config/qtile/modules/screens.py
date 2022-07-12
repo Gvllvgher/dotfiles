@@ -72,6 +72,7 @@ screens = [
                     foreground='#99c0de'
                     ),
                 widget.Net(
+                    format='{down} ↓↑ {up}',
                     foreground='#99c0de',
                     mouse_callbacks= {
                         'Button1':

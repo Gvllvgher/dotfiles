@@ -11,6 +11,14 @@ screens = [
             [   widget.Sep(padding=3, linewidth=0),
                 widget.GroupBox(
                                 highlight_method='line',
+                                padding=3,
+                                spacing=5,
+                                margin=5,
+                                #hide_unused=True,
+                                rounded=False,
+                                center_aligned=True,
+                                font='JetBrainsMono Nerd Font',
+                                fontsize=14,
                                 this_screen_border="#5294e2",
                                 this_current_screen_border="#5294e2",
                                 active="#ffffff",
@@ -102,7 +110,7 @@ screens = [
                 widget.Sep(padding=5, linewidth=0)
                 
             ],
-            30,  # height in px
+            32,  # height in px
             background=palette[1],  # background color
             opacity=0.9,
             margin=[

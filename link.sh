@@ -10,7 +10,8 @@ linkFiles=( \
     ".config/neofetch/config.conf" \
     ".config/xfce4/terminal/terminalrc" \
     ".config/picom.conf" \
-    ".config/dunst/dunstrc"
+    ".config/dunst/dunstrci" \
+    ".config/flameshot/flameshot.ini" \
 )
 
 # Define any directories that need to be linked

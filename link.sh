@@ -50,3 +50,6 @@ for dir in ${linkDirs[@]}; do
     # Link the directory
     ln -sfT $SCRIPT_DIR/$dir ~/$dir
 done
+
+# This probably shouldn't be in here, but it's the best place I can think
+xfconf-query -c xfce4-session -p /general/LockCommand -s "betterlockscreen -l" --create -t string

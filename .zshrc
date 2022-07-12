@@ -17,3 +17,8 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 PROMPT='%n@%m %1~%(!.#.$) '
+
+# Alias
+alias ls="ls --color"
+alias la="ls -a"
+alias ll="ls -al"

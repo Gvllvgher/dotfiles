@@ -19,8 +19,13 @@ bindkey "^[[1;5D" backward-word
 PROMPT='%n@%m %1~%(!.#.$) '
 
 # Alias
-alias ls="ls --color"
-alias la="ls -a"
-alias ll="ls -al"
+#alias ls="ls --color"
+#alias la="ls -a"
+#alias ll="ls -al"
+
+alias ls="exa --git"
+alias la="exa -a --git"
+alias ll="exa -a --long --git"
+alias lh="exa -a --long --header --git"
 
 eval "$(starship init zsh)"

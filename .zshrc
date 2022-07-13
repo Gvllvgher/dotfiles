@@ -15,17 +15,23 @@ compinit
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+bindkey "^[[3~" delete-char
 
+# Simple Prompt
 PROMPT='%n@%m %1~%(!.#.$) '
 
 # Alias
-#alias ls="ls --color"
-#alias la="ls -a"
-#alias ll="ls -al"
-
 alias ls="exa --git"
 alias la="exa -a --git"
 alias ll="exa -a --long --git"
 alias lh="exa -a --long --header --git"
+#alias ls="ls --color"
+#alias la="ls -a"
+#alias ll="ls -al"
 
+# Plugins
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Start Starship
 eval "$(starship init zsh)"

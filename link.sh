@@ -19,6 +19,7 @@ linkFiles=( \
 linkDirs=( \
     ".config/qtile" \
     ".config/rofi" \
+    ".config/alacritty" \
 )
 
 # Defines the current script directory

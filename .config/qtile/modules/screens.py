@@ -84,7 +84,7 @@ screens = [
                     foreground='#99c0de',
                     mouse_callbacks= {
                         'Button1':
-                        lambda: qtile.cmd_spawn(terminal + ' -e nmtui')
+                        lambda: qtile.cmd_spawn('alacritty -e nmtui')
                         }
                     ),
                 widget.TextBox(

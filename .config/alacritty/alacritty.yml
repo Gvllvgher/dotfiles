@@ -46,3 +46,10 @@ cursor:
 
 ## Live config reload
 live_config_reload: true
+
+## Run neofetch at start
+shell:
+  program: /bin/zsh
+  args:
+    - -c
+    - neofetch && exec zsh

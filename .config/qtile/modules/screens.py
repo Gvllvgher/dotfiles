@@ -45,7 +45,7 @@ screens = [
                     foreground="#ffffff",
                     mouse_callbacks={
                         'Button1':
-                        lambda: qtile.cmd_spawn(terminal + ' -e yay -Syu')
+                        lambda: qtile.cmd_spawn('alaxritty -e yay -Syu')
                         }
                     ),
                 widget.Systray(icon_size = 20),
@@ -61,7 +61,7 @@ screens = [
                     foreground='#99c0de',
                     mouse_callbacks = {
                         'Button1':
-                        lambda: qtile.cmd_spawn(terminal + ' -e "htop -s PERCENT_CPU"')
+                        lambda: qtile.cmd_spawn('alacritty -e "htop -s PERCENT_CPU"')
                         }
                     ),
                 widget.TextBox(
@@ -72,7 +72,7 @@ screens = [
                     foreground='#99c0de',
                     mouse_callbacks = {
                         'Button1':
-                        lambda: qtile.cmd_spawn(terminal + ' -e "htop -s PERCENT_MEM"')
+                        lambda: qtile.cmd_spawn('alacritty -e "htop -s PERCENT_MEM"')
                         }
                     ),
                 widget.TextBox(

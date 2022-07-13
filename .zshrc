@@ -28,6 +28,7 @@ alias lh="exa -a --long --header --git"
 #alias ls="ls --color"
 #alias la="ls -a"
 #alias ll="ls -al"
+eval $(thefuck --alias)
 
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

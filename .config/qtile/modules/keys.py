@@ -3,6 +3,7 @@ from libqtile.config import Key
 
 mod = "mod4"
 terminal = "xfce4-terminal"
+alt_terminal = "alacritty"
 
 keys = [
     # Switch between windows
@@ -51,15 +52,12 @@ keys = [
         desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
-    Key([mod, "shift"], "n", lazy.spawn("alacritty -e nmtui"), desc="network menu"),
+    Key([mod, "shift"], "n", lazy.spawn(alt_terminal + " -e nmtui"), desc="network menu"),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([mod, "shift"],
-        "Return",
-        lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack"),
+    Key([mod, "shift"], "Return", lazy.spawn(alt_terminal), desc="Launch alt terminal"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below

@@ -1,7 +1,7 @@
 from libqtile import bar
 from .widgets import *
 from libqtile.config import Screen
-from modules.keys import terminal
+from modules.keys import terminal, alt_terminal
 from modules.colors import palette
 import os
 
@@ -45,7 +45,7 @@ screens = [
                     foreground="#ffffff",
                     mouse_callbacks={
                         'Button1':
-                        lambda: qtile.cmd_spawn('alaxritty -e yay -Syu')
+                        lambda: qtile.cmd_spawn(alt_terminal + ' -e yay -Syu')
                         }
                     ),
                 widget.Systray(icon_size = 20),
@@ -61,7 +61,7 @@ screens = [
                     foreground='#99c0de',
                     mouse_callbacks = {
                         'Button1':
-                        lambda: qtile.cmd_spawn('alacritty -e htop -s PERCENT_CPU')
+                        lambda: qtile.cmd_spawn(alt_terminal + ' -e htop -s PERCENT_CPU')
                         }
                     ),
                 widget.TextBox(
@@ -72,7 +72,7 @@ screens = [
                     foreground='#99c0de',
                     mouse_callbacks = {
                         'Button1':
-                        lambda: qtile.cmd_spawn('alacritty -e htop -s PERCENT_MEM')
+                        lambda: qtile.cmd_spawn(alt_terminal + ' -e htop -s PERCENT_MEM')
                         }
                     ),
                 widget.TextBox(
@@ -84,7 +84,7 @@ screens = [
                     foreground='#99c0de',
                     mouse_callbacks= {
                         'Button1':
-                        lambda: qtile.cmd_spawn('alacritty -e nmtui')
+                        lambda: qtile.cmd_spawn(alt_terminal + ' -e nmtui')
                         }
                     ),
                 widget.TextBox(

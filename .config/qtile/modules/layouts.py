@@ -32,6 +32,7 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='makebranch'),  # gitk
     Match(wm_class='maketag'),  # gitk
     Match(wm_class='Alacritty'),
+    Match(wm_class='flameshot'),
     Match(wm_class='xfce4-power-manager-settings'),
     Match(wm_class='ssh-askpass'),  # ssh-askpass
     Match(title='branchdialog'),  # gitk

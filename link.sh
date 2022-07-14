@@ -13,6 +13,7 @@ linkFiles=( \
     ".config/dunst/dunstrci" \
     ".config/starship.toml" \
     ".config/flameshot/flameshot.ini" \
+    ".config/kitty/kitty.conf" \
 )
 
 # Define any directories that need to be linked
@@ -44,7 +45,7 @@ done
 # Loop through the linkDirs list
 for dir in ${linkDirs[@]}; do
     # Delete the directory if it exists
-    rm -rf ~/$dir & > /dev/null
+    rm -rf ~/$dir
     
     # Create the parent directory(ies) if it/they don't exist
     # mkdir -p ~/${dir%/*}

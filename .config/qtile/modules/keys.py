@@ -53,4 +53,6 @@ keys = [
 
     # Custom keybinds
     Key([], "Home", lazy.spawn("flameshot gui")),
+    Key([mod], "f", lazy.spawn("firefox")),
+]
 ]

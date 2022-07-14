@@ -53,6 +53,15 @@ screens = [
                 volume, 
                 widget.Sep(padding=4, linewidth=0),
                 widget.TextBox(
+                    text='',
+                    foreground='#99c0de',
+                    mouse_callbacks = {
+                        'Button1':
+                        lambda: qtile.cmd_spawn("rofi-bluetooth")
+                        }
+                    ),
+                widget.Sep(padding=4, linewidth=0),
+                widget.TextBox(
                     text='|',
                     foreground='#99c0de'
                     ),

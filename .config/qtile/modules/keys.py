@@ -14,7 +14,6 @@ keys = [
     Key([mod], "k", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "r", lazy.spawn("rofi -show run"), desc="spawn run menu"),
     Key([mod], "a", lazy.spawn("rofi -show drun"), desc="spawn apps"),
-    Key([mod], "b", lazy.spawn("betterlockscreen -l"), desc="lock screen"),
     Key([mod], "x", lazy.spawn("sh -c ~/.config/rofi/powermenu.sh"), desc="power menu"),
     
     # Move windows between left/right columns or move up/down in current stack.
@@ -55,4 +54,6 @@ keys = [
     # Custom keybinds
     Key([], "Home", lazy.spawn("flameshot gui")),
     Key([mod], "f", lazy.spawn("firefox")),
+    Key([mod], "q", lazy.spawn("betterlockscreen -l"), desc="lock screen"),
+    Key([mod], "b", lazy.spawn("rofi-bluetooth"), desc="bluetooth menu"),
 ]

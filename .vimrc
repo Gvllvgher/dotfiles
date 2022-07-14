@@ -43,7 +43,7 @@ set hlsearch
 set history=1000
 
 " Colors
-set termguicolors
+" set termguicolors
 " }}}
 
 " MAPPINGS ---- {{{
@@ -72,7 +72,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'prettier/vim-prettier'
   Plug 'vim-airline/vim-airline'
-  Plug 'catppuccin/vim', { 'as':'catppuccin' }
+"  Plug 'catppuccin/vim', { 'as':'catppuccin' }
   Plug 'vim-airline/vim-airline-themes'
   Plug 'preservim/nerdtree', {'branch':'master'} |
               \ Plug 'Xuyuanp/nerdtree-git-plugin'

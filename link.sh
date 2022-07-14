@@ -14,6 +14,7 @@ linkFiles=( \
     ".config/starship.toml" \
     ".config/flameshot/flameshot.ini" \
     ".config/kitty/kitty.conf" \
+    ".config/nvim/init.vim" \
 )
 
 # Define any directories that need to be linked

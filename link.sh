@@ -15,6 +15,7 @@ linkFiles=( \
     ".config/flameshot/flameshot.ini" \
     ".config/kitty/kitty.conf" \
     ".config/nvim/init.vim" \
+    ".config/onlyoffice/DesktopEditors.conf" \
 )
 
 # Define any directories that need to be linked
@@ -48,9 +49,6 @@ done
 for dir in ${linkDirs[@]}; do
     # Delete the directory if it exists
     rm -rf ~/$dir
-    
-    # Create the parent directory(ies) if it/they don't exist
-    # mkdir -p ~/${dir%/*}
 
     # Link the directory
     ln -sfT $SCRIPT_DIR/$dir ~/$dir

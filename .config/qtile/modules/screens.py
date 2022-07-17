@@ -53,6 +53,18 @@ screens = [
                 volume, 
                 widget.Sep(padding=4, linewidth=0),
                 widget.TextBox(
+                    #text='盛',
+                    text='',
+                    fontsize=14,
+                    foreground='#99c0de',
+                    ),
+                widget.Backlight(
+                    brightness_file='/sys/class/backlight/intel_backlight/brightness',
+                    max_brightness_file='/sys/class/backlight/intel_backlight/max_brightness',
+                    foreground='#99c0de',
+                    ),
+                widget.Sep(padding=4, linewidth=0),
+                widget.TextBox(
                     text='',
                     foreground='#99c0de',
                     mouse_callbacks = {

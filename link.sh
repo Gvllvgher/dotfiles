@@ -16,6 +16,10 @@ linkFiles=( \
     ".config/kitty/kitty.conf" \
     ".config/nvim/init.vim" \
     ".config/onlyoffice/DesktopEditors.conf" \
+    ".config/pulse/client.conf" \
+    ".config/pulse/default.pa" \
+    ".config/pulse/system.pa" \
+    ".config/pulse/daemon.conf" \
 )
 
 # Define any directories that need to be linked

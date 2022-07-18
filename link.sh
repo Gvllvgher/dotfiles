@@ -27,6 +27,7 @@ linkDirs=( \
     ".config/qtile" \
     ".config/rofi" \
     ".config/alacritty" \
+    ".config/ranger" \
 )
 
 # Defines the current script directory

@@ -28,7 +28,6 @@ linkDirs=( \
     ".config/rofi" \
     ".config/alacritty" \
     ".config/ranger" \
-    ".mozilla/extensions" \
 )
 
 # Defines the current script directory

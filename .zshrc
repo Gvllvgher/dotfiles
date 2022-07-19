@@ -13,6 +13,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Disable the 'r' command
+# 'r' evaluates to fc -e, which basically recalls the last command.
+# This can be an issue for several reasons, but for me, I just want
+# to use 'r' as an alias for ranger.
+disable r
+
+# Keybinds
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^[[3~" delete-char

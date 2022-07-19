@@ -1,6 +1,6 @@
-from libqtile.config import Key, Group
+from libqtile.config import Key, Group, ScratchPad, DropDown
 from libqtile.command import lazy
-from .keys import keys, mod
+from .keys import keys, mod, terminal
 
 groups = [
     Group(name="1", label=" "),
@@ -11,7 +11,8 @@ groups = [
     Group(name="6", label=" "),
     Group(name="7", label=" "),
     Group(name="8", label=" "),
-    Group(name="9", label=" ")
+    Group(name="9", label=" "),
+    ScratchPad("0", [DropDown("term", terminal, opacity=0.8, height=0.5, width=0.80)])
 ]
 
 for i in groups:
@@ -27,6 +28,8 @@ for i in groups:
 
         Key([mod], "Left", lazy.screen.prev_group(),
             desc="Switch to previous group"),
+
+        Key([mod], "s", lazy.group["0"].dropdown_toggle("term")),
 
         # mod1 + shift + letter of group = switch to & move focused window to group
         Key([mod, "shift"],

@@ -27,9 +27,7 @@ alias ll="exa -a --long --git"
 alias lh="exa -a --long --header --git"
 alias vi="nvim"
 alias vim="nvim"
-#alias ls="ls --color"
-#alias la="ls -a"
-#alias ll="ls -al"
+alias r="ranger"
 eval $(thefuck --alias)
 
 # Plugins

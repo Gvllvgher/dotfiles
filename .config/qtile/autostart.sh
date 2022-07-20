@@ -1,5 +1,7 @@
 #!/bin/sh
 
+WALL=~/.config/qtile/blue_firewatch.png
+
 # Setting wallpapers
 feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown

@@ -28,7 +28,7 @@ bindkey "^[[3~" delete-char
 PROMPT='%n@%m %1~%(!.#.$) '
 
 # Alias
-
+export EDITOR="nvim"
 alias ls="exa --git"
 alias la="exa -a --git"
 alias ll="exa -a --long --git"

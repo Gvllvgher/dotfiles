@@ -13,6 +13,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Variables
+export EDITOR="nvim"
+
 # Disable the 'r' command
 # 'r' evaluates to fc -e, which basically recalls the last command.
 # This can be an issue for several reasons, but for me, I just want
@@ -28,12 +31,14 @@ bindkey "^[[3~" delete-char
 PROMPT='%n@%m %1~%(!.#.$) '
 
 # Alias
+
 alias ls="exa --git"
 alias la="exa -a --git"
 alias ll="exa -a --long --git"
 alias lh="exa -a --long --header --git"
-alias vi="nvim"
-alias vim="nvim"
+alias vi="$EDITOR"
+alias vim="$EDITOR"
+alias v="$EDITOR"
 alias r="ranger"
 eval $(thefuck --alias)
 

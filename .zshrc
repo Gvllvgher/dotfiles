@@ -15,6 +15,7 @@ compinit
 
 # Variables
 export EDITOR="nvim"
+export WALL="~/.config/qtile/blue_firewatch.png"
 
 # Disable the 'r' command
 # 'r' evaluates to fc -e, which basically recalls the last command.

@@ -13,10 +13,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Variables
-export EDITOR="nvim"
-export WALL="~/.config/qtile/blue_firewatch.png"
-
 # Disable the 'r' command
 # 'r' evaluates to fc -e, which basically recalls the last command.
 # This can be an issue for several reasons, but for me, I just want

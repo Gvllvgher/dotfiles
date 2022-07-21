@@ -6,12 +6,8 @@ WALL=~/.config/qtile/blue_firewatch.png
 feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 
-dmidecode -s system-product-name | grep 'VMware' &> /dev/null
-if [[$? == 0 ]]; then
-    picom & disown
-else
-    picom --experimental-backends --vsync & disown # should prevent screen tearing on most setups if needed
-fi
+# picom --experimental-backends --vsync & disown # should prevent screen tearing on most setups if needed
+picom & disown # should prevent screen tearing on most setups if needed
 
 # Display Settings
 #xrandr --auto & disown

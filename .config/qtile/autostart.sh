@@ -6,7 +6,7 @@ WALL=~/.config/qtile/blue_firewatch.png
 feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 
-dmiedecode -s system-product-name | grep 'VMware' &> /dev/null
+dmidecode -s system-product-name | grep 'VMware' &> /dev/null
 if [[$? == 0 ]]; then
     picom & disown
 else

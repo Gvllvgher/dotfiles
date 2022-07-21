@@ -10,7 +10,10 @@ bindkey -e
 zstyle :compinstall filename '/home/justin/.zshrc'
 
 autoload -Uz compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
 compinit
+_comp_options+=(globdots)
 # End of lines added by compinstall
 
 # Disable the 'r' command

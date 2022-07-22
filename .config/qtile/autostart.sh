@@ -6,8 +6,13 @@ WALL=~/.config/qtile/blue_firewatch.png
 feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 
-# picom --experimental-backends --vsync & disown # should prevent screen tearing on most setups if needed
-picom & disown # should prevent screen tearing on most setups if needed
+# Picom
+if pacman -Q open-vm-tools &> /dev/null; then
+    picom & disown
+else
+    # Should prevent screen tearing on most setups if needed
+    picom --experimental-backends --vsync & disown 
+fi
 
 # Display Settings
 #xrandr --auto & disown

@@ -30,6 +30,11 @@ bindkey "^[[3~" delete-char
 # Simple Prompt
 PROMPT='%n@%m %1~%(!.#.$) '
 
+# Alias Functions
+gitHubClone() {
+    git clone "https://github.com/$1"
+}
+
 # Alias
 export EDITOR="nvim"
 alias ls="exa --git"
@@ -40,6 +45,9 @@ alias vi="$EDITOR"
 alias vim="$EDITOR"
 alias v="$EDITOR"
 alias r="ranger"
+alias ra='ranger --cmd="set show_hidden true"'
+alias gc="git clone"
+alias gh=gitHubClone
 eval $(thefuck --alias)
 
 # Plugins

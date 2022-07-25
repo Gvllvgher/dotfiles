@@ -7,12 +7,12 @@ feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 
 # Picom
-if pacman -Q open-vm-tools &> /dev/null; then
-    picom & disown
-else
+#if pacman -Q open-vm-tools &> /dev/null; then
+#    picom & disown
+#else
     # Should prevent screen tearing on most setups if needed
     picom --experimental-backends --vsync & disown 
-fi
+#fi
 
 # Display Settings
 #xrandr --auto & disown

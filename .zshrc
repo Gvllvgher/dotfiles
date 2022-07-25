@@ -41,6 +41,8 @@ alias ls="exa --git"
 alias la="exa -a --git"
 alias ll="exa -a --long --git"
 alias lh="exa -a --long --header --git"
+# rm
+alias rd="rm -r"
 # Editor
 export EDITOR="nvim"
 alias vi="$EDITOR"
@@ -58,8 +60,6 @@ alias gc="git commit -m"
 alias gp="git push"
 alias gl="git pull"
 alias gs="git status"
-# The Fuck
-eval $(thefuck --alias)
 # Directories
 alias d="cd ~/Documents"
 alias D="cd ~/Downloads"

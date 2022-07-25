@@ -36,13 +36,13 @@ gitHubClone() {
 }
 
 # Alias
-export EDITOR="nvim"
 # ls
 alias ls="exa --git"
 alias la="exa -a --git"
 alias ll="exa -a --long --git"
 alias lh="exa -a --long --header --git"
 # Editor
+export EDITOR="nvim"
 alias vi="$EDITOR"
 alias vim="$EDITOR"
 alias v="$EDITOR"
@@ -60,6 +60,13 @@ alias gl="git pull"
 alias gs="git status"
 # The Fuck
 eval $(thefuck --alias)
+# Directories
+alias d="cd ~/Documents"
+alias D="cd ~/Downloads"
+alias c="cd ~/.config"
+alias h="cd ~"
+alias g="cd ~/git"
+alias v="cd ~/vmware"
 
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

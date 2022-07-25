@@ -37,17 +37,28 @@ gitHubClone() {
 
 # Alias
 export EDITOR="nvim"
+# ls
 alias ls="exa --git"
 alias la="exa -a --git"
 alias ll="exa -a --long --git"
 alias lh="exa -a --long --header --git"
+# Editor
 alias vi="$EDITOR"
 alias vim="$EDITOR"
 alias v="$EDITOR"
+# Ranger
 alias r="ranger"
 alias ra='ranger --cmd="set show_hidden true"'
+# Git
 alias gc="git clone"
 alias gh=gitHubClone
+alias ga="git add"
+alias gA="git add -A"
+alias gc="git commit -m"
+alias gp="git push"
+alias gl="git pull"
+alias gs="git status"
+# The Fuck
 eval $(thefuck --alias)
 
 # Plugins

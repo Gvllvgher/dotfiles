@@ -73,7 +73,6 @@ alias D="cd ~/Downloads"
 alias c="cd ~/.config"
 alias h="cd ~"
 alias g="cd ~/git"
-alias v="cd ~/vmware"
 
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

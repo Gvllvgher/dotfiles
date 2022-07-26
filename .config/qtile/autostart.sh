@@ -8,10 +8,10 @@ betterlockscreen -u $WALL & disown
 
 # Picom
 #if pacman -Q open-vm-tools &> /dev/null; then
-#    picom & disown
+    picom & disown
 #else
     # Should prevent screen tearing on most setups if needed
-    picom --experimental-backends --vsync & disown 
+#    picom --experimental-backends --vsync & disown 
 #fi
 
 # Display Settings

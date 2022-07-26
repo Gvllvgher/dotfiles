@@ -34,6 +34,13 @@ PROMPT='%n@%m %1~%(!.#.$) '
 gitHubClone() {
     git clone "https://github.com/$1"
 }
+fastGitPush() {
+    if [[ -z $1 ]]; then
+        git push
+    else
+        git add -A && git commit -m $1 && git push
+    fi
+}
 
 # Alias
 # ls
@@ -57,7 +64,7 @@ alias gh=gitHubClone
 alias ga="git add"
 alias gA="git add -A"
 alias gc="git commit -m"
-alias gp="git push"
+alias gp=fastGitPush
 alias gl="git pull"
 alias gs="git status"
 # Directories

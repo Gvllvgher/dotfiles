@@ -9,7 +9,7 @@ linkFiles=( \
     ".config/gtk-3.0/settings.ini" \
     ".config/neofetch/config.conf" \
     ".config/xfce4/terminal/terminalrc" \
-    ".config/picom.conf" \
+    ".config/picom/picom.conf" \
     ".config/dunst/dunstrci" \
     ".config/starship.toml" \
     ".config/flameshot/flameshot.ini" \

@@ -58,6 +58,10 @@ alias v="$EDITOR"
 # Ranger
 alias r="ranger"
 alias ra='ranger --cmd="set show_hidden true"'
+# Package managers
+alias paci="sudo pacman -S"
+alias yayi="yay -S"
+alias pipi="pip install"
 # Git
 alias gc="git clone"
 alias gh=gitHubClone

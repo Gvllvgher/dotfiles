@@ -42,12 +42,16 @@ set hlsearch
 " Command history
 set history=1000
 
-" Colors
-"let g:catppuccin_flavor = "mocha"
-"lua << EOF
-"require("catppuccin").setup()
-"EOF
-"colorscheme catppuccin
+" Spell checking
+set spell!
+
+" Python
+let g:python3_host_prog="/usr/bin/python3"
+
+" Providers
+let g:loaded_ruby_provider=0
+let g:loaded_node_provider=0
+let g:loaded_perl_provider=0
 " }}}
 
 " MAPPINGS ---- {{{
@@ -85,4 +89,14 @@ call plug#end()
 
 " STATUSLINE ---- {{{
 let g:airline_theme='term'
+" }}}
+
+" COLORS ---- {{{
+let g:catppuccin_flavor = "mocha"
+
+lua << EOF
+require("catppuccin").setup()
+EOF
+
+colorscheme catppuccin
 " }}}

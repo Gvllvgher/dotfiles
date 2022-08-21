@@ -50,6 +50,8 @@ alias ll="exa -a --long --git"
 alias lh="exa -a --long --header --git"
 # rm
 alias rd="rm -r"
+# xclip
+alias clip="xclip -selection clipboard"
 # Editor
 export EDITOR="nvim"
 alias vi="$EDITOR"

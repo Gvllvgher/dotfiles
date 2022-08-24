@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WALL=~/.config/qtile/blue_firewatch.png
+WALL=~/.config/qtile/moraine-lake-ab-canada.png
 
 # Setting wallpapers
 feh --bg-scale $WALL & disown

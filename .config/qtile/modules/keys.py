@@ -30,7 +30,6 @@ keys = [
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
-    Key([mod, "shift"], "n", lazy.spawn(alt_terminal + " -e nmtui"), desc="network menu"),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -56,4 +55,5 @@ keys = [
     Key([mod], "f", lazy.spawn("librewolf")),
     Key([mod], "q", lazy.spawn("betterlockscreen -l"), desc="lock screen"),
     Key([mod], "b", lazy.spawn("rofi-bluetooth"), desc="bluetooth menu"),
+    Key([mod], "n", lazy.spawn(alt_terminal + " -e nmtui"), desc="network menu"),
 ]

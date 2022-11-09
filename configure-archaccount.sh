@@ -28,7 +28,7 @@ fi
 
 # Running link.sh to link dot files
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]:-$0}";     )" &> /dev/null && pwd 2>/dev/null;     )";
-$SCRIPT_DIR/link.sh
+$SCRIPT_DIR/install.sh
 
 # Setting betterlockscreen as the lock command
 xfconf-query -c xfce4-session -p /general/LockCommand -s "betterlockscreen -l" --create -t string

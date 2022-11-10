@@ -44,10 +44,9 @@ fastGitPush() {
 
 # Alias
 # ls
-alias ls="exa --git"
-alias la="exa -a --git"
-alias ll="exa -a --long --git"
-alias lh="exa -a --long --header --git"
+alias ls="ls --color"
+alias la="ls -a --color"
+alias ll="ls -lah --color"
 # rm
 alias rd="rm -r"
 # xclip

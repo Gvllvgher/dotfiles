@@ -21,6 +21,7 @@ linkFiles=( \
     ".config/pulse/default.pa" \
     ".config/pulse/system.pa" \
     ".config/pulse/daemon.conf" \
+    ".local/share/code-server/User/settings.json" \
 )
 
 # Define any directories that need to be linked

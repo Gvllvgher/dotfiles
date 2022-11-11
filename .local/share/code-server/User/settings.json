@@ -5,4 +5,6 @@
     "editor.fontSize": 14, // Font Size
     "editor.fontWeight": "normal", // Font Weight
     "editor.fontLigatures": true, // Font ligatures
+    "workbench.colorTheme": "Default Dark+", // Font ligatures
+
 }

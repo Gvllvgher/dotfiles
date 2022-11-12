@@ -82,6 +82,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'catppuccin/nvim', { 'as':'catppuccin' }
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'sheerun/vim-polyglot'
   Plug 'preservim/nerdtree', {'branch':'master'} |
               \ Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()

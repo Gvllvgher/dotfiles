@@ -6,7 +6,7 @@
 [credential]
 	helper = cache --timeout=14400
 [core]
-    editor = vim
+    editor = nvim
 	autocrlf = input
 	longpaths = true
 	pager = cat

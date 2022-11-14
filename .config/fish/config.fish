@@ -5,11 +5,11 @@ function gitHubClone
 end
 
 function fastGitPush
-    if test $argv = ""
-        git push
-    else
+    if count $argv > /dev/null
         git add -A
         git commit -m $argv
+        git push
+    else
         git push
     end
 end

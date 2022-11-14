@@ -7,6 +7,7 @@ linkFiles=( \
     ".zshrc" \
     ".Xresources" \
     ".gtkrc-2.0" \
+    ".config/fish/config.fish" \
     ".config/gtk-3.0/settings.ini" \
     ".config/neofetch/config.conf" \
     ".config/xfce4/terminal/terminalrc" \

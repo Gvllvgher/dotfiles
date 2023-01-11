@@ -7,10 +7,10 @@ feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 
 # Picom
-picom & disown
+#picom & disown
 
 # Should prevent screen tearing on most setups if needed
-#picom --experimental-backends --vsync & disown 
+picom --experimental-backends --vsync & disown 
 
 # Display Settings
 #xrandr --auto & disown

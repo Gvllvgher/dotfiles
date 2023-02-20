@@ -52,18 +52,18 @@ screens = [
                 widget.Sep(padding=4, linewidth=0),
                 volume, 
                 widget.Sep(padding=4, linewidth=0),
-                widget.TextBox(
-                    #text='盛',
-                    text='',
-                    fontsize=14,
-                    foreground='#99c0de',
-                    ),
-                widget.Backlight(
-                    brightness_file='/sys/class/backlight/intel_backlight/brightness',
-                    max_brightness_file='/sys/class/backlight/intel_backlight/max_brightness',
-                    foreground='#99c0de',
-                    ),
-                widget.Sep(padding=4, linewidth=0),
+#                widget.TextBox(
+#                    #text='盛',
+#                    text='',
+#                    fontsize=14,
+#                    foreground='#99c0de',
+#                    ),
+#                widget.Backlight(
+#                    brightness_file='/sys/class/backlight/intel_backlight/brightness',
+#                    max_brightness_file='/sys/class/backlight/intel_backlight/max_brightness',
+#                    foreground='#99c0de',
+#                    ),
+#                widget.Sep(padding=4, linewidth=0),
                 widget.TextBox(
                     text='',
                     foreground='#99c0de',
@@ -108,17 +108,17 @@ screens = [
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e nmtui')
                         }
                     ),
-                widget.TextBox(
-                    text='|',
-                    foreground='#99c0de'
-                    ),
-                widget.Battery (
-                    foreground='#99c0de',
-                    mouse_callbacks= {
-                        'Button1':
-                        lambda: qtile.cmd_spawn("xfce4-power-manager-settings")
-                        }
-                    ),
+ #               widget.TextBox(
+ #                   text='|',
+ #                   foreground='#99c0de'
+ #                   ),
+ #               widget.Battery (
+ #                   foreground='#99c0de',
+ #                   mouse_callbacks= {
+ #                       'Button1':
+ #                       lambda: qtile.cmd_spawn("xfce4-power-manager-settings")
+ #                       }
+ #                   ),
                 widget.Sep(padding=5, linewidth=0),
                 widget.TextBox(
                     text='',

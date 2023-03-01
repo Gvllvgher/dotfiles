@@ -22,11 +22,12 @@ opt.smartcase = true -- match other cases while searching
 opt.showmatch = true -- show matching works
 opt.hlsearch = true -- highlight during search
 
--- Tabs, Indent
+-- Tabs, Indent, Folding
 opt.shiftwidth = 2 -- indent width
 opt.tabstop = 2 -- tab width
 opt.expandtab = true -- use spaces instead of tab
 opt.smartindent = true -- auto-indent lines
+opt.foldmethod = 'marker' -- enable folding
 
 -- Memory, CPU
 opt.hidden = true -- enable background buffers

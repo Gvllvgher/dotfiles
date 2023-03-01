@@ -42,8 +42,16 @@ set hlsearch
 " Command history
 set history=1000
 
-" Colors
-" set termguicolors
+" Spell checking
+set spell!
+
+" Python
+let g:python3_host_prog="/usr/bin/python3"
+
+" Providers
+let g:loaded_ruby_provider=0
+let g:loaded_node_provider=0
+let g:loaded_perl_provider=0
 " }}}
 
 " MAPPINGS ---- {{{
@@ -72,9 +80,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'prettier/vim-prettier'
   Plug 'vim-airline/vim-airline'
-  Plug 'elzr/vim-json'
-  "  Plug 'catppuccin/vim', { 'as':'catppuccin' }
+  Plug 'catppuccin/nvim', { 'as':'catppuccin' }
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'sheerun/vim-polyglot'
   Plug 'preservim/nerdtree', {'branch':'master'} |
               \ Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
@@ -82,4 +90,14 @@ call plug#end()
 
 " STATUSLINE ---- {{{
 let g:airline_theme='term'
+" }}}
+
+" COLORS ---- {{{
+let g:catppuccin_flavor = "mocha"
+
+lua << EOF
+require("catppuccin").setup()
+EOF
+
+colorscheme catppuccin
 " }}}

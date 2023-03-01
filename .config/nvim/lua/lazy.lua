@@ -1,3 +1,5 @@
+-- lazy.lua
+
 -- Bootstrap Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -11,15 +13,3 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-
-vim.g.mapleader = "," -- Make sure to set `mapleader` before lazy so your mappings are correct
-
-require("lazy").setup("plugins")
-require('settings')
-require('keys')
-
-require("catppuccin").setup({
-  flavour = "mocha",
-})
-
-vim.cmd.colorscheme "catppuccin"

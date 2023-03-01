@@ -16,7 +16,6 @@ linkFiles=( \
     ".config/starship.toml" \
     ".config/flameshot/flameshot.ini" \
     ".config/kitty/kitty.conf" \
-    ".config/nvim/init.vim" \
     ".config/onlyoffice/DesktopEditors.conf" \
     ".config/pulse/client.conf" \
     ".config/pulse/default.pa" \
@@ -31,6 +30,7 @@ linkDirs=( \
     ".config/rofi" \
     ".config/alacritty" \
     ".config/ranger" \
+    ".config/nvim" \
 )
 
 # Defines the current script directory

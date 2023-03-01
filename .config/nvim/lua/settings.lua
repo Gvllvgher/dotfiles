@@ -37,6 +37,7 @@ opt.updatetime = 250 -- ms to wait for triggering events
 
 -- Globals
 g.python3_host_prog="/usr/bin/python3"
+g.airline_theme='term'
 g.loaded_ruby_provider=0
 g.loaded_node_provider=0
 g.loaded_perl_provider=0

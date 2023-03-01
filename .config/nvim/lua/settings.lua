@@ -14,6 +14,7 @@ opt.wrap = true -- set false for nowrap - for auto wrapping
 opt.number = true -- shows line numbers
 opt.relativenumber = true -- use relative line numbers
 opt.laststatus = 2 -- status bar
+opt.termguicolors = true -- enable 24-bit RGB colors
 
 -- Search
 opt.incsearch = true -- incrementally highlight while searching

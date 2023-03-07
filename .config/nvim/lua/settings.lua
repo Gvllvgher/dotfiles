@@ -43,3 +43,20 @@ g.airline_theme='term'
 g.loaded_ruby_provider=0
 g.loaded_node_provider=0
 g.loaded_perl_provider=0
+g.coc_global_extensions = {
+  'coc-json',
+  'coc-toml',
+  'coc-yaml',
+  'coc-git',
+  'coc-python',
+  'coc-lua',
+  'coc-powershell',
+  'coc-html',
+  'coc-highlight',
+  'coc-prettier',
+  'coc-spell-checker',
+  'coc-sh',
+  'coc-docker',
+  'coc-translator',
+  'coc-markdownlint'
+}

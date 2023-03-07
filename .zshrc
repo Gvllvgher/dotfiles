@@ -78,7 +78,9 @@ alias D="cd ~/Downloads"
 alias c="cd ~/.config"
 alias h="cd ~"
 alias g="cd ~/git"
-
+# Random applications
+# uxplay is an AirPlay server application
+alias uxplay="uxplay -fps 120 -n $(hostname) -nh"
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

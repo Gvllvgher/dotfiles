@@ -10,7 +10,7 @@ return {
                           "query",
                           "bash",
                           "dockerfile",
-                            "gitcommit",
+                          "gitcommit",
                           "gitignore",
                           "html",
                           "json",
@@ -29,5 +29,5 @@ return {
         additional_vim_regex_highlighting = false,
       },
    }
- end
+ end,
 }

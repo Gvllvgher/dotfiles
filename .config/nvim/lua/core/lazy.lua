@@ -14,16 +14,4 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = "," -- Make sure to set `mapleader` before lazy so your mappings are correct
 
-require("lazy").setup("core.plugins", {
-  -- defaults = { lazy = true },
-  install = {
-    -- install missing plugins on startup. This doesn't increase startup time.
-    missing = false,
-  },
-  change_detection = {
-    -- automatically check for config file changes and reload the ui
-    enabled = false,
-    notify = true, -- get a notification when changes are found
-  },
-  debug = false,
-})
+require("lazy").setup("core.plugins")

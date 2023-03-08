@@ -36,10 +36,11 @@ return {
       custom_highlights = {},
       integrations = {
           --cmp = true,
-          --gitsigns = true,
+          coc_nvim = true,
           nvimtree = true,
+          treesitter = true,
+          notify = true,
           --telescope = true,
-          --notify = false,
           --mini = false,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
       },

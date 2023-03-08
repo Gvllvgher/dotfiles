@@ -4,3 +4,5 @@ require("core.lazy")
 require("core.settings")
 -- Import/Execute key mappings
 require("core.keys")
+
+-- Nerd Fonts: https://www.nerdfonts.com/font-downloads

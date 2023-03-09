@@ -5,6 +5,9 @@ local g = vim.g
 -- Colorscheme
 vim.cmd.colorscheme "catppuccin"
 
+-- Notify function
+vim.notify = require("notify")
+
 -- Globals
 g.python3_host_prog = "/usr/bin/python3"
 g.airline_theme = 'catppuccin'

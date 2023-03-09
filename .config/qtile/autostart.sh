@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WALL=~/.config/qtile/moraine-lake-ab-canada.png
+WALL=~/.config/background.png
 
 # Setting wallpapers
 feh --bg-scale $WALL & disown

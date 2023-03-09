@@ -7,6 +7,7 @@ linkFiles=( \
     ".zshrc" \
     ".Xresources" \
     ".gtkrc-2.0" \
+    ".config/background.png" \
     ".config/fish/config.fish" \
     ".config/gtk-3.0/settings.ini" \
     ".config/neofetch/config.conf" \

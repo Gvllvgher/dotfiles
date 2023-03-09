@@ -6,11 +6,14 @@ WALL=~/.config/qtile/moraine-lake-ab-canada.png
 feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 
-# Picom
-#picom & disown
-
-# Should prevent screen tearing on most setups if needed
-picom --experimental-backends --vsync & disown 
+dmidecode --string chassis-type | grep 'VMware' &> /dev/null
+if [[ $? == 0 ]]; then
+  # Should prevent screen tearing on most setups if needed
+  picom --experimental-backends --vsync & disown 
+else
+  # Picom
+  picom & disown
+fi
 
 # Display Settings
 #xrandr --auto & disown

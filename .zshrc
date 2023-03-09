@@ -48,6 +48,8 @@ fastGitPush() {
 alias ls="ls --color"
 alias la="ls -a --color"
 alias ll="ls -lah --color"
+# WSL
+alias wsl="cd /mnt/c/Users/Justin"
 # rm
 alias rd="rm -r"
 # xclip

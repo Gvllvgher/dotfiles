@@ -19,7 +19,7 @@ g.coc_global_extensions = {
   'coc-toml',
   'coc-yaml',
   'coc-git',
-  'coc-python',
+  'coc-pyright',
   'coc-lua',
   'coc-powershell',
   'coc-html',

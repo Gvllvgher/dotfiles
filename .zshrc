@@ -26,7 +26,7 @@ disable r
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^[[3~" delete-char
-bindkey '^I' autosuggest-accept
+bindkey '^[[Z' autosuggest-accept # Shift + Tab to accept autocomplete suggestions
 
 # Simple Prompt
 PROMPT='%n@%m %1~%(!.#.$) '

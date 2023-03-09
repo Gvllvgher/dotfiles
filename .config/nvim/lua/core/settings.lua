@@ -6,6 +6,9 @@ local opt = vim.opt
 -- Colorscheme
 vim.cmd.colorscheme "catppuccin"
 
+-- Line Number color
+vim.api.nvim_set_hl(0, 'LineNr', { fg = "#757575"} )
+
 -- Core
 opt.compatible = false -- set nocompatible
 opt.encoding = "utf-8" -- encoding

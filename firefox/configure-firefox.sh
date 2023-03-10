@@ -13,4 +13,4 @@ else
   sudo touch /etc &> /dev/null
 fi
 
-sudo ln -sf $SCRIPT_DIR/$file /usr/lib/firefox/distribution/$file
+sudo ln -sf $SCRIPT_DIR/$linkFile /usr/lib/firefox/distribution/$linkFile

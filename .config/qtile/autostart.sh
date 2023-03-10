@@ -12,7 +12,7 @@ if [[ $? == 0 ]]; then
   picom --experimental-backends --vsync & disown 
 else
   # Picom
-  picom & disown
+  picom --vsync & disown
 fi
 
 # Display Settings

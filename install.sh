@@ -70,3 +70,6 @@ cp -r $userHome/.zsh ~/
 cp $userHome/.zshrc ~/
 exit
 EOF
+
+# Configure Firefox
+$SCRIPT_DIR/firefox/configure-firefox.sh

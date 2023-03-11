@@ -2,9 +2,6 @@
 
 local opt = vim.opt
 
--- Line Number color
-vim.api.nvim_set_hl(0, 'LineNr', { fg = "#FFFFFF"} )
-
 -- Core
 opt.compatible = false -- set nocompatible
 opt.encoding = "utf-8" -- encoding

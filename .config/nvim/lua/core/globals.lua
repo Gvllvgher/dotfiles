@@ -1,12 +1,17 @@
 -- globals.lua
 
+local api = vim.api
+local cmd = vim.cmd
 local g = vim.g
 
+-- Line Number color
+api.nvim_set_hl(0, 'LineNr', { fg = "#000000"} )
+
 -- Clipboard
-vim.api.nvim_set_option("clipboard","unnamed") 
+api.nvim_set_option("clipboard","unnamed")
 
 -- Colorscheme
-vim.cmd.colorscheme "catppuccin"
+cmd.colorscheme "catppuccin"
 
 -- Notify function
 vim.notify = require("notify")

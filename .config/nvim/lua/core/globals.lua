@@ -2,6 +2,9 @@
 
 local g = vim.g
 
+-- Clipboard
+vim.api.nvim_set_option("clipboard","unnamed") 
+
 -- Colorscheme
 vim.cmd.colorscheme "catppuccin"
 

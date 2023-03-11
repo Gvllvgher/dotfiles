@@ -3,7 +3,7 @@
 local opt = vim.opt
 
 -- Line Number color
-vim.api.nvim_set_hl(0, 'LineNr', { fg = "#757575"} )
+vim.api.nvim_set_hl(0, 'LineNr', { fg = "#FFFFFF"} )
 
 -- Core
 opt.compatible = false -- set nocompatible

@@ -1,7 +1,7 @@
 return {
   "catppuccin/nvim",
   name = 'catppuccin',
-  config = function ()
+  config = function()
     require("catppuccin").setup({
       flavor = "mocha",
           background = { -- :h background
@@ -33,7 +33,11 @@ return {
           operators = {},
       },
       color_overrides = {},
-      custom_highlights = {},
+      custom_highlights = function(colors)
+        return {
+          LineNr = { fg = colors.overlay1 }
+        }
+      end,
       integrations = {
           --cmp = true,
           coc_nvim = true,

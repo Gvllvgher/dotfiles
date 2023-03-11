@@ -5,7 +5,8 @@ local cmd = vim.cmd
 local g = vim.g
 
 -- Line Number color
-api.nvim_set_hl(0, 'LineNr', { fg = "#000000"} )
+-- api.nvim_set_hl(0, 'LineNr', { fg = "#FFFFFF"} )
+-- cmd "hi LineNr guifg=#C6D0F5 guibg=NONE"
 
 -- Clipboard
 api.nvim_set_option("clipboard","unnamed")

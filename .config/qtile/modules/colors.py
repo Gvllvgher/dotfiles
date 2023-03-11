@@ -1,5 +1,6 @@
 catppuccin = [
-    "#d8dee9",  # Colour 0 - Gray white
+    #"#d8dee9",  # Colour 0 - Gray white
+    "#C6D0F5",
     "#1e1e2e",  # Colour 1 - Dark blue/black
     "#313244",  # Colour 2 - Dark blue/black/gray
     "#f5a97f",  # Colour 3 - Light orange

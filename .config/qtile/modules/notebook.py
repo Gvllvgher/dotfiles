@@ -1,9 +1,13 @@
+from re import fullmatch
 from libqtile import bar
 from .widgets import *
 from libqtile.config import Screen
 from modules.keys import terminal, alt_terminal
 from modules.colors import palette
+from catppuccin import Flavour
 import os
+
+mocha = Flavour.mocha()
 
 notebook_screen = [
     Screen(
@@ -26,10 +30,10 @@ notebook_screen = [
                 widget.Sep(padding=5, linewidth=0),
                 widget.Prompt(),
                 widget.Spacer(length=5),
-                widget.WindowName(foreground='#99c0de',fmt='{}'),
+                widget.WindowName(foreground=mocha.subtext1.hex,fmt='{}'),
                 widget.Spacer(),
                 widget.Clock(format='%H:%M:%S - %m/%d/%y',
-                    foreground='#99c0de'),
+                    foreground=mocha.subtext1.hex),
                 widget.Spacer(),
                 widget.Chord(
                     chords_colors={
@@ -56,17 +60,17 @@ notebook_screen = [
                     #text='盛',
                     text='',
                     fontsize=14,
-                    foreground='#99c0de',
+                    foreground=mocha.subtext1.hex,
                     ),
                 widget.Backlight(
                     brightness_file='/sys/class/backlight/intel_backlight/brightness',
                     max_brightness_file='/sys/class/backlight/intel_backlight/max_brightness',
-                    foreground='#99c0de',
+                    foreground=mocha.subtext1.hex,
                     ),
                 widget.Sep(padding=4, linewidth=0),
                 widget.TextBox(
                     text='',
-                    foreground='#99c0de',
+                    foreground=mocha.subtext1.hex,
                     mouse_callbacks = {
                         'Button1':
                         lambda: qtile.cmd_spawn("rofi-bluetooth")
@@ -75,11 +79,11 @@ notebook_screen = [
                 widget.Sep(padding=4, linewidth=0),
                 widget.TextBox(
                     text='|',
-                    foreground='#99c0de'
+                    foreground=mocha.subtext1.hex
                     ),
                 widget.CPU(
                     format='{freq_current}GHz {load_percent}%',
-                    foreground='#99c0de',
+                    foreground=mocha.subtext1.hex,
                     mouse_callbacks = {
                         'Button1':
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e htop -s PERCENT_CPU')
@@ -87,10 +91,10 @@ notebook_screen = [
                     ),
                 widget.TextBox(
                     text='|',
-                    foreground='#99c0de'
+                    foreground=mocha.subtext1.hex
                     ),
                 widget.Memory(
-                    foreground='#99c0de',
+                    foreground=mocha.subtext1.hex,
                     mouse_callbacks = {
                         'Button1':
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e htop -s PERCENT_MEM')
@@ -98,11 +102,11 @@ notebook_screen = [
                     ),
                 widget.TextBox(
                     text='|',
-                    foreground='#99c0de'
+                    foreground=mocha.subtext1.hex
                     ),
                 widget.Net(
                     format='{down} ↓↑ {up}',
-                    foreground='#99c0de',
+                    foreground=mocha.subtext1.hex,
                     mouse_callbacks= {
                         'Button1':
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e nmtui')
@@ -110,10 +114,10 @@ notebook_screen = [
                     ),
                 widget.TextBox(
                     text='|',
-                    foreground='#99c0de'
+                    foreground=mocha.subtext1.hex
                     ),
                 widget.Battery (
-                    foreground='#99c0de',
+                    foreground=mocha.subtext1.hex,
                     mouse_callbacks= {
                         'Button1':
                         lambda: qtile.cmd_spawn("xfce4-power-manager-settings")

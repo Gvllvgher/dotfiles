@@ -115,7 +115,7 @@ desktop_screens = [
             ],
             32,  # height in px
             background=palette[1],  # background color
-            opacity=0.8,
+            opacity=1, # Was 0.8
             margin=[
                 10,
                 10,

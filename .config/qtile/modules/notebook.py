@@ -25,31 +25,31 @@ notebook_screen = [
                                 fontsize=14,
                                 this_screen_border=mocha.blue.hex,
                                 this_current_screen_border=mocha.blue.hex,
-                                active=mocha.subtext1.hex,
-                                inactive=mocha.surface1.hex),
+                                active=mocha.text.hex,
+                                inactive=mocha.surface2.hex),
                 widget.Sep(padding=5, linewidth=0),
                 widget.Prompt(),
                 widget.Spacer(length=5),
-                widget.WindowName(foreground=mocha.subtext1.hex,fmt='{}'),
+                widget.WindowName(foreground=mocha.text.hex,fmt='{}'),
                 widget.Spacer(),
                 widget.Clock(format='%H:%M:%S - %m/%d/%y',
-                    foreground=mocha.subtext1.hex),
+                    foreground=mocha.text.hex),
                 widget.Spacer(),
                 widget.Chord(
                     chords_colors={
-                        'launch': (mocha.red.hex, mocha.subtext1.hex),
+                        'launch': (mocha.red.hex, mocha.text.hex),
                     },
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.CurrentLayoutIcon(
                     scale=0.6,
-                    foreground=mocha.subtext1.hex
+                    foreground=mocha.base.hex
                     ),
                 widget.CheckUpdates(
                     update_interval=1800,
                     distro="Arch_yay",
                     display_format="{updates} Updates",
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     mouse_callbacks={
                         'Button1':
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e yay -Syu')
@@ -63,17 +63,17 @@ notebook_screen = [
                     #text='盛',
                     text='',
                     fontsize=14,
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     ),
                 widget.Backlight(
                     brightness_file='/sys/class/backlight/intel_backlight/brightness',
                     max_brightness_file='/sys/class/backlight/intel_backlight/max_brightness',
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     ),
                 widget.Sep(padding=4, linewidth=0),
                 widget.TextBox(
                     text='',
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     mouse_callbacks = {
                         'Button1':
                         lambda: qtile.cmd_spawn("rofi-bluetooth")
@@ -82,11 +82,11 @@ notebook_screen = [
                 widget.Sep(padding=4, linewidth=0),
                 widget.TextBox(
                     text='|',
-                    foreground=mocha.subtext1.hex
+                    foreground=mocha.text.hex
                     ),
                 widget.CPU(
                     format='{freq_current}GHz {load_percent}%',
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     mouse_callbacks = {
                         'Button1':
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e htop -s PERCENT_CPU')
@@ -94,10 +94,10 @@ notebook_screen = [
                     ),
                 widget.TextBox(
                     text='|',
-                    foreground=mocha.subtext1.hex
+                    foreground=mocha.text.hex
                     ),
                 widget.Memory(
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     mouse_callbacks = {
                         'Button1':
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e htop -s PERCENT_MEM')
@@ -105,11 +105,11 @@ notebook_screen = [
                     ),
                 widget.TextBox(
                     text='|',
-                    foreground=mocha.subtext1.hex
+                    foreground=mocha.text.hex
                     ),
                 widget.Net(
                     format='{down} ↓↑ {up}',
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     mouse_callbacks= {
                         'Button1':
                         lambda: qtile.cmd_spawn(alt_terminal + ' -e nmtui')
@@ -117,10 +117,10 @@ notebook_screen = [
                     ),
                 widget.TextBox(
                     text='|',
-                    foreground=mocha.subtext1.hex
+                    foreground=mocha.text.hex
                     ),
                 widget.Battery (
-                    foreground=mocha.subtext1.hex,
+                    foreground=mocha.text.hex,
                     mouse_callbacks= {
                         'Button1':
                         lambda: qtile.cmd_spawn("xfce4-power-manager-settings")

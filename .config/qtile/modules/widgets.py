@@ -48,7 +48,7 @@ class MyVolume(widget.Volume):
 
 volume = MyVolume(
     fontsize=13,
-    foreground=mocha.subtext1.hex,
+    foreground=mocha.text.hex,
     font='JetBrainsMono Nerd Font Regular',
     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("pavucontrol")}
 )

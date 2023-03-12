@@ -1,5 +1,8 @@
 from libqtile import widget
 from libqtile import qtile
+from catppuccin import Flavour
+
+mocha = Flavour.mocha()
 
 colors = [
 	      ["#282c34", "#282c34"], # panel background
@@ -45,7 +48,7 @@ class MyVolume(widget.Volume):
 
 volume = MyVolume(
     fontsize=13,
-    foreground='#99c0de',
+    foreground=mocha.subtext1.hex,
     font='JetBrainsMono Nerd Font Regular',
     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("pavucontrol")}
 )

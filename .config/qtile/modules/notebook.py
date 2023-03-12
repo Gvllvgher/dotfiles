@@ -140,7 +140,7 @@ notebook_screen = [
             ],
             32,  # height in px
             background=mocha.base.hex,  # background color
-            opacity=1, # Was 0.8
+            opacity=0.9, # Was 0.8
             margin=[
                 10,
                 10,

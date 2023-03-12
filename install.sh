@@ -72,4 +72,4 @@ exit
 EOF
 
 # Configure Firefox
-$SCRIPT_DIR/firefox/configure-firefox.sh
+$SCRIPT_DIR/.config/firefox/configure-firefox.sh

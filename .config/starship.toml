@@ -15,7 +15,7 @@ vicmd_symbol = "[❮](green)"
 [directory]
 truncation_length = 4
 # Catppuccin 'lavender'
-style = "bold lavender"
+style = "bold blue"
 
 # Disable the package module, hiding it from the prompt completely
 [package]

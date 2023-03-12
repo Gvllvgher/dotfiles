@@ -3,7 +3,7 @@ configuration{
     lines: 5;
     font: "JetBrainsMono Nerd Font Regular 12";
     show-icons: true;
-    icon-theme: "Papirus";
+    icon-theme: "Papirus-Dark";
     terminal: "kitty";
     drun-display-format: "{icon} {name}";
     location: 0;

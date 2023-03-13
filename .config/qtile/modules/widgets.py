@@ -95,7 +95,7 @@ chord = widget.Chord(
     )
 
 currentlayout = widget.CurrentLayoutIcon(
-    scale=0.75,
+    scale=0.6,
     **widget_defaults
     )
 
@@ -107,6 +107,7 @@ checkupdates = widget.CheckUpdates(
         'Button1':
         lambda: qtile.cmd_spawn(alt_terminal + ' -e yay -Syu')
         },
+    foreground='#FFFFFF',
     **widget_defaults
     )
 

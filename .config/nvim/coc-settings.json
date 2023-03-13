@@ -1,3 +1,4 @@
 {
+  "cSpell.ignoreWords": ["qtile", "libqtile", "rofi", "distro"],
   "Lua.diagnostics.globals": [ "vim" ]
 }

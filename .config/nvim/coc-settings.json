@@ -1,4 +1,14 @@
 {
-  "cSpell.ignoreWords": ["qtile", "libqtile", "rofi", "distro"],
+  "cSpell.ignoreWords": [
+    "qtile",
+    "libqtile",
+    "rofi",
+    "distro",
+    "alacritty",
+    "drun",
+    "unsplit",
+    "amixer",
+    "nmtui"
+  ],
   "Lua.diagnostics.globals": [ "vim" ]
 }

@@ -38,8 +38,6 @@ if 'laptop' in chassis_type:
         line,
         memory,
         line,
-        network,
-        line,   
         battery,
         separator_large,
         power,

@@ -5,8 +5,6 @@ from modules.colors import palette
 import re
 import subprocess
 
-bar_opacity = 0.9
-
 machine_info = subprocess.check_output(["hostnamectl", "status"], universal_newlines=True)
 m = re.search('Chassis: (.+?)\n', machine_info)
 assert m is not None
@@ -86,7 +84,7 @@ screens = [
             widgets,
             32,  # height in px
             background=palette["dark_background"],  # background color
-            opacity=bar_opacity, # Was 0.8
+            opacity=0.9, # Was 0.8
             margin=[
                 10,
                 10,

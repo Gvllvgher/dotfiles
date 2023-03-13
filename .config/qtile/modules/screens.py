@@ -58,7 +58,6 @@ else:
         clock,
         widget.Spacer(),
         chord,
-        currentlayout,
         checkupdates,
         systray,
         separator_medium,

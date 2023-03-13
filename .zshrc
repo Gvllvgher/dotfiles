@@ -87,6 +87,6 @@ alias uxplay="uxplay -fps 120 -n $(hostname) -nh"
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source ~/.zsh/catppuccin-zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 # Start Starship
 eval "$(starship init zsh)"

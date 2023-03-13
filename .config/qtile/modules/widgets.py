@@ -107,7 +107,6 @@ checkupdates = widget.CheckUpdates(
         'Button1':
         lambda: qtile.cmd_spawn(alt_terminal + ' -e yay -Syu')
         },
-    foreground='#FFFFFF',
     **widget_defaults
     )
 

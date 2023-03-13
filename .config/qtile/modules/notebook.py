@@ -3,7 +3,6 @@ from libqtile import bar
 from .widgets import *
 from libqtile.config import Screen
 from modules.keys import terminal, alt_terminal
-from modules.colors import palette
 from catppuccin import Flavour
 import os
 

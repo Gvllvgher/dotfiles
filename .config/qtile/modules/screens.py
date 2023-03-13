@@ -1,13 +1,12 @@
 from libqtile import bar
 from .widgets import *
 from libqtile.config import Screen
-from modules.keys import terminal, alt_terminal
 from modules.colors import palette
-from modules.desktop import desktop_screens
 from modules.notebook import notebook_screen
-import os
 import re
 import subprocess
+
+bar_opacity = 0.9
 
 machine_info = subprocess.check_output(["hostnamectl", "status"], universal_newlines=True)
 m = re.search('Chassis: (.+?)\n', machine_info)
@@ -15,5 +14,53 @@ chassis_type = m.group(1)
 
 if 'laptop' in chassis_type:
     screens = notebook_screen
+    widgets = []
 else:
-    screens = desktop_screens
+    widgets = [   
+        separator,
+        groupbox,
+        separator,
+        widget.Prompt(),
+        widget.Spacer(length=5),
+        windowname,
+        widget.Spacer(),
+        clock,
+        widget.Spacer(),
+        chord,
+        currentlayout,
+        checkupdates,
+        systray,
+        separator_medium,
+        volume, 
+        separator_medium,
+        separator_medium,
+        bluetooth,
+        separator_medium,
+        line,
+        processor,
+        line,
+        memory,
+        line,
+        network,
+        line,
+        separator_large,
+        power,
+        separator_large
+    ]
+
+screens = [
+    Screen(
+        top=bar.Bar(
+            widgets,
+            32,  # height in px
+            background=palette["dark_background"],  # background color
+            opacity=bar_opacity, # Was 0.8
+            margin=[
+                10,
+                10,
+                2,
+                10
+            ]
+        ),
+    ),
+]

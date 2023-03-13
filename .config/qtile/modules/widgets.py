@@ -115,6 +115,26 @@ systray = widget.Systray(
     **widget_defaults
     )
 
+backlight_icon = widget.TextBox(
+    #text='盛',
+    text='',
+    **widget_defaults
+    )
+
+backlight = widget.Backlight(
+    brightness_file='/sys/class/backlight/intel_backlight/brightness',
+    max_brightness_file='/sys/class/backlight/intel_backlight/max_brightness',
+    **widget_defaults
+    )
+
+battery = widget.Battery(
+    mouse_callbacks= {
+        'Button1':
+        lambda: qtile.cmd_spawn("xfce4-power-manager-settings")
+        },
+    **widget_defaults
+    )
+
 bluetooth = widget.TextBox(
     text='',
     mouse_callbacks = {

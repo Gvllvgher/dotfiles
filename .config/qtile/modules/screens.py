@@ -2,7 +2,6 @@ from libqtile import bar
 from .widgets import *
 from libqtile.config import Screen
 from modules.colors import palette
-from modules.notebook import notebook_screen
 import re
 import subprocess
 
@@ -13,8 +12,40 @@ m = re.search('Chassis: (.+?)\n', machine_info)
 chassis_type = m.group(1)
 
 if 'laptop' in chassis_type:
-    screens = notebook_screen
-    widgets = []
+    widgets = [
+        separator,
+        groupbox,
+        separator_large,
+        widget.Prompt(),
+        widget.Spacer(length=5),
+        windowname,
+        widget.Spacer(),
+        clock,
+        widget.Spacer(),
+        chord,
+        currentlayout,
+        checkupdates,
+        systray,
+        separator_medium,
+        volume, 
+        separator_medium,
+        backlight_icon,
+        backlight,
+        separator_medium,
+        bluetooth,
+        separator_medium,
+        line,
+        processor,
+        line,
+        memory,
+        line,
+        network,
+        line,   
+        battery,
+        separator_large,
+        power,
+        separator_large
+    ]
 else:
     widgets = [   
         separator,

@@ -13,7 +13,7 @@ linkFiles=( \
     ".config/neofetch/config.conf" \
     ".config/xfce4/terminal/terminalrc" \
     ".config/picom/picom.conf" \
-    ".config/dunst/dunstrci" \
+    ".config/dunst/dunstrc" \
     ".config/starship.toml" \
     ".config/flameshot/flameshot.ini" \
     ".config/kitty/kitty.conf" \

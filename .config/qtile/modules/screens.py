@@ -1,5 +1,5 @@
 from libqtile import bar
-from .widgets import *
+from modules.widgets import *
 from libqtile.config import Screen
 from modules.colors import palette
 import re
@@ -9,6 +9,7 @@ bar_opacity = 0.9
 
 machine_info = subprocess.check_output(["hostnamectl", "status"], universal_newlines=True)
 m = re.search('Chassis: (.+?)\n', machine_info)
+assert m is not None
 chassis_type = m.group(1)
 
 if 'laptop' in chassis_type:

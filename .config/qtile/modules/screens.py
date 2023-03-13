@@ -43,6 +43,7 @@ if 'laptop' in chassis_type:
         battery,
         separator_large,
         power,
+        widget.Spacer(length=5),
         separator_large
     ]
 else:
@@ -75,6 +76,7 @@ else:
         line,
         separator_large,
         power,
+        widget.Spacer(length=5),
         separator_large
     ]
 

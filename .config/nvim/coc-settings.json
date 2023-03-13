@@ -8,7 +8,11 @@
     "drun",
     "unsplit",
     "amixer",
-    "nmtui"
+    "nmtui",
+    "dgroups",
+    "wmname",
+    "wttr",
+    "Willoughby"
   ],
   "Lua.diagnostics.globals": [ "vim" ]
 }

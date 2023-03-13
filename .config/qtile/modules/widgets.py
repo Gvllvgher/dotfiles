@@ -37,6 +37,21 @@ class MyVolume(widget.Volume):
             with open(self.wob, 'a') as f:
                 f.write(str(self.volume) + "\n")
 
+weather = widget.Wttr(
+    location = {
+        "Willoughby, Ohio, USA": "Willoughby"
+        },
+    format = 1,
+    units = 'u'
+    )
+
+openweather = widget.OpenWeather(
+    cityid = '5176937',
+    metric = False,
+    format = '{main_temp}°{units_temperature} {humidity}% {weather_details}',
+    **widget_defaults
+    )
+
 volume = MyVolume(
     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("pavucontrol")},
     **widget_defaults
@@ -82,7 +97,7 @@ windowname = widget.WindowName(
     )
 
 clock = widget.Clock(
-    format='%H:%M:%S - %m/%d/%y',
+    format='%H:%M %m/%d',
     **widget_defaults 
     )
 

@@ -1,16 +1,24 @@
 from libqtile import layout
 from libqtile.config import Match
+from modules.colors import palette
+
+layout_defaults = dict(
+    border_focus = palette["light_border"],
+    border_normal = palette["dark_border"],
+    border_width = 1
+)
 
 layouts = [
     layout.Bsp(
-        border_focus = '#5294e2',
-        border_normal = '#2c5380',
         grow_amount = 2,
         border_on_single = False,
-        margin = 8
+        margin = 10,
+        **layout_defaults
     ),
-    layout.MonadTall(margin=8, border_focus='#5294e2',
-                     border_normal='#2c5380'),
+    layout.MonadTall(
+        margin = 8,
+        **layout_defaults
+    ),
     #layout.Columns(border_focus_stack='#d75f5f'),
     layout.Max(),
     # Try more layouts by unleashing below layouts.

@@ -10,7 +10,7 @@ hostnamectl status | grep 'Chassis' | grep 'vm' &> /dev/null # Grep looks for VM
 if [[ $? == 0 ]]; then
   # Should prevent screen tearing on most setups if needed
   # if a VM
-  picom --no-vsync & disown 
+  #picom --no-vsync & disown 
 else
   # if not a VM
   picom --vsync & disown 

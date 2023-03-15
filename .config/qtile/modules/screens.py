@@ -1,7 +1,7 @@
 from libqtile import bar
-from modules.widgets import *
 from libqtile.config import Screen
-from modules.colors import palette
+from .widgets import *
+from .colors import palette
 import re
 import subprocess
 

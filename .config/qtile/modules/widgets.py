@@ -1,7 +1,7 @@
 from libqtile import widget
 from libqtile import qtile
-from modules.keys import terminal, alt_terminal
-from modules.colors import palette
+from .keys import terminal, alt_terminal
+from .colors import palette
 import os
 
 widget_defaults = dict(

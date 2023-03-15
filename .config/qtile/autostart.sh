@@ -9,7 +9,7 @@ betterlockscreen -u $WALL & disown
 dmidecode --string chassis-type | grep 'VMware' &> /dev/null
 if [[ $? == 0 ]]; then
   # Should prevent screen tearing on most setups if needed
-  picom --experimental-backends & disown 
+  picom --experimental-backends --vsync & disown 
 else
   # Picom
   picom --vsync & disown 

@@ -6,16 +6,14 @@ WALL=~/.config/background.png
 feh --bg-scale $WALL & disown
 betterlockscreen -u $WALL & disown
 
-dmidecode --string chassis-type | grep 'VMware' &> /dev/null
+dmidecode --string chassis-type | grep 'VMware\|Other' &> /dev/null # Grep looks for VMware OR Other chassis-type to determine if VM or not
 if [[ $? == 0 ]]; then
   # Should prevent screen tearing on most setups if needed
-#  picom --experimental-backends --vsync & disown 
+  picom --experimental-backends --vsync & disown 
 else
   # Picom
-#  picom --vsync & disown 
+  picom --vsync & disown 
 fi
-
-picom --experimental-backends --vsync
 
 # Display Settings
 #xrandr --auto & disown

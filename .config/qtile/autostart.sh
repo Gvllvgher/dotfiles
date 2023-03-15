@@ -9,9 +9,10 @@ betterlockscreen -u $WALL & disown
 hostnamectl status | grep 'Chassis' | grep 'vm' &> /dev/null # Grep looks for VMware OR Other chassis-type to determine if VM or not
 if [[ $? == 0 ]]; then
   # Should prevent screen tearing on most setups if needed
-  picom --experimental-backends --vsync & disown 
+  # if a VM
+  picom --experimental-backends & disown 
 else
-  # Picom
+  # if not a VM
   picom --vsync & disown 
 fi
 

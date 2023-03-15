@@ -89,10 +89,10 @@ screens = [
             background=palette["dark_background"],  # background color
             opacity=0.9, # Was 0.8
             margin=[
-                10,
-                10,
+                4,
+                4,
                 2,
-                10
+                4
             ]
         ),
     ),

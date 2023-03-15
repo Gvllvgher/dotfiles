@@ -2,15 +2,27 @@ from libqtile import layout
 from libqtile.config import Match
 from modules.colors import palette
 
+layout_defaults = dict(
+    grow_amount = 2,
+    border_on_single = False,
+    margin = 4,
+    border_focus = palette["light_border"],
+    border_normal = palette["dark_border"],
+    border_width = 1
+)
+
 layouts = [
-    layout.Bsp(
-        grow_amount = 2,
-        border_on_single = False,
-        margin = 10,
-        border_focus = palette["light_border"],
-        border_normal = palette["dark_border"],
-        border_width = 1
-    )
+    layout.Bsp(**layout_defaults),
+    layout.Max(),
+    layout.MonadTall(**layout_defaults),
+    layout.MonadWide(**layout_defaults),
+    layout.Matrix(columns=2, **layout_defaults),
+    layout.RatioTile(**layout_defaults),
+    # layout.Columns(),
+    # layout.Tile(),
+    # layout.TreeTab(),
+    # layout.VerticalTile(),
+    # layout.Zoomy(),
 ]
 
 floating_layout = layout.Floating(float_rules=[

@@ -13,11 +13,11 @@ layout_defaults = dict(
 
 layouts = [
     layout.Bsp(**layout_defaults),
-    layout.Max(),
+    #layout.Max(),
     layout.MonadTall(**layout_defaults),
-    layout.MonadWide(**layout_defaults),
-    layout.Matrix(columns=2, **layout_defaults),
-    layout.RatioTile(**layout_defaults),
+    #layout.MonadWide(**layout_defaults),
+    #layout.Matrix(columns=2, **layout_defaults),
+    #layout.RatioTile(**layout_defaults),
     # layout.Columns(),
     # layout.Tile(),
     # layout.TreeTab(),

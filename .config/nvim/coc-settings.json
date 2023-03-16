@@ -13,7 +13,8 @@
     "dgroups",
     "wmname",
     "wttr",
-    "Willoughby"
+    "Willoughby",
+    "gmrs"
   ],
   "Lua.diagnostics.globals": [ "vim" ]
 }

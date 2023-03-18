@@ -37,4 +37,6 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='ssh-askpass'),
     Match(title='branchdialog'),
     Match(title='pinentry'),
-])
+    ],
+    **layout_defaults,
+)

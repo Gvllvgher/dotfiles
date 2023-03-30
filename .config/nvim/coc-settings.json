@@ -1,5 +1,7 @@
 {
   "cSpell.ignoreWords": [
+    "asyncio",
+    "asyncpg",
     "qtile",
     "libqtile",
     "rofi",

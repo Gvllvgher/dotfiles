@@ -38,6 +38,10 @@
       "https-everywhere-eff@eff.org": {
         "install_url": "https://www.eff.org/files/https-everywhere-latest.xpi",
         "installation_mode": "force_installed"
+      },
+      "admin@2fas.com": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/2fas-two-factor-authentication/latest.xpi",
+        "installation_mode": "force_installed"
       }
     }
   }

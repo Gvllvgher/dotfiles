@@ -6,7 +6,6 @@ return {
       ensure_installed = { "c",
                           "lua",
                           "vim",
-                          "help",
                           "query",
                           "bash",
                           "dockerfile",

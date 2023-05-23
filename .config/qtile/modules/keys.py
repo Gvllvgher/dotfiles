@@ -57,7 +57,7 @@ keys = [
     # Custom keybinds
     Key([], "Home", lazy.spawn("flameshot gui")),
     Key([mod], "f", lazy.spawn("firefox")),
-    Key([mod], "q", lazy.spawn("betterlockscreen -l"), desc="lock screen"),
+    Key([mod], "q", lazy.spawn("betterlockscreen -l --display 1"), desc="lock screen"),
     Key([mod], "b", lazy.spawn("rofi-bluetooth"), desc="bluetooth menu"),
     Key([mod], "n", lazy.spawn(alt_terminal + " -e nmtui"), desc="network menu"),
 ]

@@ -60,3 +60,5 @@
 	sort = -committerdate
 [fetch]
 	prune = true
+[http]
+	postBuffer = 157286400

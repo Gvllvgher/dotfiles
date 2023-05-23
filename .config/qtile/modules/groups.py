@@ -3,15 +3,15 @@ from libqtile.command import lazy
 from .keys import keys, mod, terminal
 
 groups = [
-    Group(name="1", label=" "),
-    Group(name="2", label=" "),
-    Group(name="3", label=" "),
-    Group(name="4", label=" "),
-    Group(name="5", label=" "),
-    Group(name="6", label=" "),
-    Group(name="7", label=" "),
-    Group(name="8", label=" "),
-    Group(name="9", label=" "),
+    Group(name="1", label=" "),
+    Group(name="2", label=" "),
+    Group(name="3", label=" "),
+    Group(name="4", label=" "),
+    Group(name="5", label=" "),
+    Group(name="6", label=" "),
+    Group(name="7", label=" "),
+    Group(name="8", label="󰇰 "),
+    Group(name="9", label=" "),
     ScratchPad("0", [DropDown("term", terminal, opacity=0.9, height=0.6, width=0.80)])
 ]
 

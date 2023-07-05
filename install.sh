@@ -62,6 +62,9 @@ for dir in ${linkDirs[@]}; do
     ln -sfT $SCRIPT_DIR/$dir ~/$dir
 done
 
+# Sudo check
+command -v sudo >/dev/null 2>&1 || { echo >&2 "I require sudo but it's not installed.  Aborting."; exit 1; }
+
 # For root user
 userHome=~
 sudo su<<EOF

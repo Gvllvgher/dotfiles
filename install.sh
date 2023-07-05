@@ -63,7 +63,7 @@ for dir in ${linkDirs[@]}; do
 done
 
 # Sudo check
-command -v sudo >/dev/null 2>&1 || { echo >&2 "I require sudo but it's not installed.  Aborting."; exit 1; }
+command -v sudo >/dev/null 2>&1 || { echo >&2 "I require sudo but it's not installed.  Aborting."; exit 0; }
 
 # For root user
 userHome=~

@@ -1,6 +1,6 @@
 {
-    "editor.fontFamily": "JetBrains Mono Nerd Font",
-    "terminal.integrated.fontFamily": "JetBrains Mono Nerd Font",
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
     "editor.fontWeight": "normal",
     "editor.fontLigatures": true,

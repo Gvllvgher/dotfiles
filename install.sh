@@ -65,6 +65,9 @@ done
 # Configure ZSH
 $SCRIPT_DIR/setup-zsh.sh
 
+# Docker check
+if [ -f /.dockerenv ]; then echo "Inside docker container, exiting." && exit 0; fi
+
 # Sudo check
 command -v sudo >/dev/null 2>&1 || { echo >&2 "I require sudo but it's not installed.  Aborting."; exit 0; }
 

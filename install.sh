@@ -65,6 +65,11 @@ done
 # Configure ZSH
 $SCRIPT_DIR/setup-zsh.sh
 
+# Check if code-server installed
+if command -v code-server &> /dev/null; then
+    $SCRIPT_DIR/setup-codeserver.sh
+fi
+
 # Sudo check
 command -v sudo >/dev/null 2>&1 || { echo >&2 "I require sudo but it's not installed.  Aborting."; exit 0; }
 

@@ -4,5 +4,6 @@
     "editor.fontSize": 14,
     "editor.fontWeight": "normal",
     "editor.fontLigatures": true,
-    "workbench.colorTheme": "Default Dark+"
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha"
 }

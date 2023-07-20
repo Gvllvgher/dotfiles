@@ -26,7 +26,7 @@ return {
       auto_install = true,
       -- Highlighting
       highlight = {
-        enabled = true,
+        enable = true,
         additional_vim_regex_highlighting = false,
       },
    }

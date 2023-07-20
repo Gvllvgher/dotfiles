@@ -16,7 +16,9 @@ return {
                           "markdown",
                           "python",
                           "regex",
-                          "yaml"
+                          "yaml",
+                          "terraform",
+                          "hcl"
       },
       -- Install parsers synchronusly
       sync_install = false,

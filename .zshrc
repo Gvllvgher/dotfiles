@@ -81,6 +81,8 @@ alias D="cd ~/Downloads"
 alias c="cd ~/.config"
 alias h="cd ~"
 alias g="cd ~/git"
+# Python
+alias py="python3"
 # Random applications
 # uxplay is an AirPlay server application
 alias uxplay="uxplay -fps 120 -n $(hostname) -nh"

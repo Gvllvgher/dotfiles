@@ -1,6 +1,6 @@
-from catppuccin import Flavour
+from catppuccin import PALETTE
 
-theme = Flavour.mocha()
+theme = PALETTE.mocha.colors
 
 palette = dict(
     text = theme.text.hex,

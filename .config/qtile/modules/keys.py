@@ -15,7 +15,17 @@ keys = [
     Key([mod], "r", lazy.spawn("rofi -show run"), desc="spawn run menu"),
     Key([mod], "a", lazy.spawn("rofi -show drun"), desc="spawn apps"),
     Key([mod], "x", lazy.spawn("sh -c ~/.config/rofi/powermenu.sh"), desc="power menu"),
-    
+
+    # Switch between groups
+    Key([mod], "Right", lazy.screen.next_group(),
+        desc="Switch to next group"),
+
+    Key([mod], "Left", lazy.screen.prev_group(),
+        desc="Switch to previous group"),
+
+    # Open temp terminal
+    Key([mod], "s", lazy.group["0"].dropdown_toggle("term")),
+
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
     Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
@@ -59,5 +69,5 @@ keys = [
     Key([mod], "f", lazy.spawn("firefox")),
     Key([mod], "q", lazy.spawn("betterlockscreen -l --display 1"), desc="lock screen"),
     Key([mod], "b", lazy.spawn("rofi-bluetooth"), desc="bluetooth menu"),
-    Key([mod], "n", lazy.spawn(alt_terminal + " -e nmtui"), desc="network menu"),
+    Key([mod, "shift"], "n", lazy.spawn(alt_terminal + " -e nmtui"), desc="network menu"),
 ]

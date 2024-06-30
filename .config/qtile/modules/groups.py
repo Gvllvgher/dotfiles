@@ -23,14 +23,6 @@ for i in groups:
             lazy.group[i.name].toscreen(),
             desc="Switch to group {}".format(i.name)),
 
-        Key([mod], "Right", lazy.screen.next_group(),
-            desc="Switch to next group"),
-
-        Key([mod], "Left", lazy.screen.prev_group(),
-            desc="Switch to previous group"),
-
-        Key([mod], "s", lazy.group["0"].dropdown_toggle("term")),
-
         # mod1 + shift + letter of group = switch to & move focused window to group
         Key([mod, "shift"],
             i.name,

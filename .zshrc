@@ -44,6 +44,9 @@ fastGitPush() {
 }
 
 # Alias
+#clear
+alias q="clear"
+alias qr="reset"
 # ls
 alias ls="ls --color"
 alias la="ls -a --color"

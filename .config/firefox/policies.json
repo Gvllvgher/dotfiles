@@ -42,6 +42,10 @@
       "admin@2fas.com": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/2fas-two-factor-authentication/latest.xpi",
         "installation_mode": "force_installed"
+      },
+      "{d7742d87-e61d-4b78-b8a1-b469842139fa}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4259790/latest.xpi",
+        "installation_mode": "force_installed"
       }
     }
   }

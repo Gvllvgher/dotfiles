@@ -73,7 +73,7 @@ windowname = widget.WindowName(
     )
 
 clock = widget.Clock(
-    format='%H:%M %m/%d',
+    format='%I:%M %p %m/%d',
     **widget_defaults 
     )
 

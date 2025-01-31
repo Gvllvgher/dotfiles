@@ -32,6 +32,7 @@ linkDirs=( \
     ".config/alacritty" \
     ".config/ranger" \
     ".config/nvim" \
+    ".config/betterlockscreen" \
 )
 
 # Defines the current script directory

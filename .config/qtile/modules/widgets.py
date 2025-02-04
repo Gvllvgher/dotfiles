@@ -22,7 +22,7 @@ weather = widget.Wttr(
     )
 
 openweather = widget.OpenWeather(
-    cityid = '5176937',
+    cityid = '5177007',
     metric = False,
     format = '{main_temp}°{units_temperature} {humidity}% {weather_details}',
     **widget_defaults
